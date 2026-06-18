@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Event Management System</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:linear-gradient(135deg,#1e3c72,#2a5298);
+            color:white;
+            min-height:100vh;
+        }
+
+        nav{
+            background:black;
+            padding:20px 40px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .college-name{
+            color:gold;
+            font-size:30px;
+            font-weight:bold;
+        }
+
+        .menu a{
+            color:white;
+            text-decoration:none;
+            margin-left:25px;
+            font-size:20px;
+            font-weight:bold;
+        }
+
+        .menu a:hover{
+            color:yellow;
+        }
+
+        .hero{
+            text-align:center;
+            padding:80px 20px 50px;
+        }
+
+        .hero h2{
+            color:gold;
+            margin-bottom:15px;
+            font-size:20px;
+        }
+
+        .hero h1{
+            font-size:65px;
+            margin-bottom:20px;
+        }
+
+        .hero p{
+            font-size:28px;
+            margin-bottom:35px;
+        }
+
+        .btn{
+            background:orange;
+            color:white;
+            padding:15px 35px;
+            text-decoration:none;
+            border-radius:10px;
+            font-size:22px;
+            font-weight:bold;
+        }
+
+        .btn:hover{
+            background:red;
+        }
+
+        .events{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            flex-wrap:wrap;
+            padding:40px;
+        }
+
+        .card{
+            background:white;
+            color:black;
+            width:280px;
+            padding:25px;
+            border-radius:15px;
+            text-align:center;
+            box-shadow:0px 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .card h3{
+            color:#1e3c72;
+            font-size:28px;
+            margin-bottom:10px;
+        }
+
+        .card p{
+            font-size:20px;
+        }
+
+        footer{
+            text-align:center;
+            padding:20px;
+            background:black;
+            margin-top:30px;
+            font-size:20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<nav>
+
+    <div class="college-name">
+        🎓 St. Jerome's Arts & Science College
+    </div>
+
+    <div class="menu">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/register/">Register</a>
+         <a href="/status/">Check Status</a>
+    </div>
+
+</nav>
+
+<div class="hero">
+
+    <h2>Welcome to St. Jerome's Arts & Science College</h2>
+
+    <h1>College Event Management System</h1>
+
+    <p>Manage and Register College Events Easily</p>
+
+    <a href="/register/" class="btn">Register Now</a>
+
+</div>
+
+<div class="events">
+
+    <a href="/sports/" style="text-decoration:none;color:inherit;">
+<div class="card">
+    <h3>🏆 Sports Day</h3>
+    <p>25 June 2026</p>
+</div>
+</a>
+
+   <a href="/cultural/" style="text-decoration:none;color:inherit;">
+<div class="card">
+    <h3>🎭 Cultural Fest</h3>
+    <p>30 June 2026</p>
+</div>
+</a>
+
+<a href="/symposium/" style="text-decoration:none;color:inherit;">
+    <div class="card">
+        <h3>💻 Symposium</h3>
+        <p>05 July 2026</p>
+    </div>
+</a>
+<a href="/college-day/" style="text-decoration:none;color:inherit;">
+<div class="card">
+    <h3>🎓 College Day</h3>
+    <p>15 July 2026</p>
+</div>
+</a>
+
+</div>
+
+<footer>
+    © 2026 St. Jerome's Arts & Science College
+</footer>
+
+</body>
+</html>

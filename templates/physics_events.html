@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Physics Events</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e293b,#2563eb);
+color:white;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+.hero{
+text-align:center;
+padding:60px 20px;
+}
+
+.hero h1{
+font-size:55px;
+color:gold;
+margin-bottom:15px;
+}
+
+.events{
+width:90%;
+margin:auto;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+padding-bottom:50px;
+}
+
+.card{
+width:300px;
+background:white;
+color:black;
+padding:25px;
+border-radius:20px;
+text-align:center;
+text-decoration:none;
+transition:0.4s;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.05);
+background:gold;
+}
+
+.card h2{
+color:#1e3c72;
+margin-bottom:10px;
+}
+
+footer{
+    background:black;
+    text-align:center;
+    padding:20px;
+    font-size:18px;
+    margin-top:auto;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+
+<h1>⚡ Physics Department Events</h1>
+
+<p>Select an Event</p>
+
+</div>
+
+<div class="events">
+
+<a href="/science-quiz/" class="card">
+<h2>🔬 Science Quiz</h2>
+<p>Test Your Science Knowledge</p>
+</a>
+
+<a href="/project-expo/" class="card">
+<h2>🚀 Project Expo</h2>
+<p>Showcase Your Projects</p>
+</a>
+
+<a href="/innovation-challenge/" class="card">
+<h2>💡 Innovation Challenge</h2>
+<p>Present Innovative Ideas</p>
+</a>
+
+</div>
+
+<footer>
+© 2026 Symposium | Physics Department
+</footer>
+
+</body>
+</html>

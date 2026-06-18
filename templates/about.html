@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Us - College Event Management System</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html,body{
+    width:100%;
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b,#2563eb);
+    color:white;
+}
+
+nav{
+    background:rgba(0,0,0,0.9);
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.college-name{
+    color:#ffd700;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:18px;
+    transition:0.4s;
+}
+
+.menu a:hover{
+    color:#ffd700;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    animation:fadeIn 1.5s ease;
+}
+
+.hero h1{
+    font-size:60px;
+    color:#ffd700;
+    text-shadow:0 0 20px rgba(255,215,0,0.6);
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    max-width:1000px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    padding-bottom:50px;
+}
+
+.section{
+    background:rgba(255,255,255,0.95);
+    color:black;
+    padding:35px;
+    border-radius:20px;
+    margin-bottom:30px;
+    transition:0.5s;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.section:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(255,215,0,0.4);
+}
+
+.section h2{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.section p{
+    font-size:19px;
+    line-height:1.8;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+
+.card{
+    width:300px;
+    background:rgba(255,255,255,0.95);
+    color:black;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    transition:0.5s;
+    cursor:pointer;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+.card:hover{
+    transform:translateY(-15px) scale(1.05);
+    background:linear-gradient(135deg,#ffd700,#ffb703);
+    color:black;
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#1e3c72;
+}
+
+.card p{
+    font-size:17px;
+    line-height:1.6;
+}
+
+footer{
+    background:black;
+    text-align:center;
+    padding:25px;
+    font-size:18px;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<div class="college-name">
+🎓 St. Jerome's Arts & Science College
+</div>
+
+<div class="menu">
+<a href="/">Home</a>
+<a href="/about/">About</a>
+<a href="/register/">Register</a>
+</div>
+</nav>
+
+<div class="hero">
+<h1>About Our College</h1>
+
+<p>
+St. Jerome's Arts & Science College is dedicated to academic excellence,
+innovation and holistic student development. Our College Event Management
+System helps students participate in academic, cultural and sports activities.
+</p>
+</div>
+
+<div class="container">
+
+<div class="section">
+<h2>🏛 About College</h2>
+<p>
+St. Jerome's Arts & Science College provides quality education and
+encourages students to excel in academics, leadership, sports and
+social responsibility.
+</p>
+</div>
+
+<div class="section">
+<h2>📚 Courses Offered</h2>
+<p>
+• B.Sc Computer Science<br>
+• BCA<br>
+• B.Com<br>
+• BBA<br>
+• B.Sc Mathematics<br>
+• M.Sc Computer Science<br>
+• M.Com
+</p>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>🎖 NCC</h3>
+<p>Leadership, discipline and national service activities.</p>
+</div>
+
+<div class="card">
+<h3>🤝 NSS</h3>
+<p>Community service and social welfare activities.</p>
+</div>
+
+<div class="card">
+<h3>🏆 Sports</h3>
+<p>Annual sports events and tournaments.</p>
+</div>
+
+<div class="card">
+<h3>🎭 Cultural Club</h3>
+<p>Dance, music, drama and cultural programs.</p>
+</div>
+
+<div class="card">
+<h3>💻 Computer Lab</h3>
+<p>Modern systems with internet facilities.</p>
+</div>
+
+<div class="card">
+<h3>📖 Library</h3>
+<p>Books, journals and digital resources.</p>
+</div>
+
+<div class="card">
+<h3>💼 Placement Cell</h3>
+<p>Career guidance and placement support.</p>
+</div>
+
+<div class="card">
+<h3>🌐 Smart Classrooms</h3>
+<p>Technology enabled learning environment.</p>
+</div>
+
+<div class="card">
+<h3>🎓 Symposiums</h3>
+<p>Technical events and seminars.</p>
+</div>
+
+</div>
+
+<div class="section">
+<h2>🎯 Vision</h2>
+<p>
+To become a center of excellence in higher education and create future leaders.
+</p>
+</div>
+
+<div class="section">
+<h2>🚀 Mission</h2>
+<p>
+To empower students with knowledge, professional skills and ethical values.
+</p>
+</div>
+
+</div>
+
+<footer>
+© 2026 St. Jerome's Arts & Science College | College Event Management System
+</footer>
+
+</body>
+</html>
+

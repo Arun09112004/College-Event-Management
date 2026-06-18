@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event Registration</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b,#2563eb);
+    min-height:100vh;
+    color:white;
+}
+
+nav{
+    background:black;
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.college-name{
+    color:gold;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:18px;
+}
+
+.menu a:hover{
+    color:gold;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px 20px;
+}
+
+.form-box{
+    background:white;
+    color:black;
+    width:500px;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.form-box h1{
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:25px;
+}
+
+label{
+    font-weight:bold;
+    display:block;
+    margin-top:15px;
+}
+
+input,select{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    margin-top:25px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+footer{
+    background:black;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+    color:white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="college-name">
+🎓 St. Jerome's Arts & Science College
+</div>
+
+<div class="menu">
+<a href="/">Home</a>
+<a href="/about/">About</a>
+<a href="/register/">Register</a>
+</div>
+
+</nav>
+
+<div class="container">
+
+<div class="form-box">
+
+<h1>Event Registration Form</h1>
+
+<form method="POST">
+
+{% csrf_token %}
+
+<label>Student Name</label>
+<input type="text" name="student_name" required>
+
+<label>College Name</label>
+<input type="text" name="college_name" required>
+
+<label>Email Address</label>
+<input type="email" name="email" required>
+
+<label>Phone Number</label>
+<input type="text" name="phone" required>
+
+<label>Department</label>
+<select name="department" required>
+<option>B.Sc Computer Science</option>
+<option>BCA</option>
+<option>B.Com</option>
+<option>BBA</option>
+<option>B.Sc Mathematics</option>
+<option>B.Sc Physics</option>
+</select>
+
+<label>Select Event</label>
+<select name="event_name" required>
+<option>Sports Day</option>
+<option>Cultural Fest</option>
+<option>Technical Symposium</option>
+<option>College Day</option>
+</select>
+
+<button type="submit">
+Register Now
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 St. Jerome's Arts & Science College
+</footer>
+
+</body>
+</html>

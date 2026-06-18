@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Symposium 2026</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+    overflow-x:hidden;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b,#2563eb);
+    color:white;
+}
+
+nav{
+    background:black;
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.college-name{
+    color:gold;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:18px;
+}
+
+.menu a:hover{
+    color:gold;
+}
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    font-size:60px;
+    color:gold;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:22px;
+}
+
+.departments{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    padding-bottom:120px;
+}
+
+.card{
+    width:300px;
+    background:white;
+    color:black;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    text-decoration:none;
+    transition:0.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:gold;
+}
+
+.card h2{
+    color:#1e3c72;
+    margin-bottom:15px;
+    font-size:32px;
+}
+
+.card p{
+    font-size:20px;
+}
+
+footer{
+    background:black;
+    text-align:center;
+    padding:20px;
+    font-size:18px;
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="college-name">
+🎓 St. Jerome's Arts & Science College
+</div>
+
+<div class="menu">
+<a href="/">Home</a>
+<a href="/about/">About</a>
+<a href="/register/">Register</a>
+</div>
+
+</nav>
+
+<div class="hero">
+
+<h1>💻 National Level Symposium 2026</h1>
+
+<p>
+Select Your Department and Explore Technical Events
+</p>
+
+</div>
+
+<div class="departments">
+
+<a href="/cs_events/" class="card">
+<h2>💻 Computer Science</h2>
+<p>5 Technical Events</p>
+</a>
+
+<a href="/commerce-events/" class="card">
+<h2>📊 Commerce</h2>
+<p>3 Technical Events</p>
+</a>
+
+<a href="/maths-events/" class="card">
+<h2>➗ Mathematics</h2>
+<p>3 Technical Events</p>
+</a>
+
+<a href="/physics-events/" class="card">
+<h2>⚡ Physics</h2>
+<p>3 Technical Events</p>
+</a>
+
+</div>
+
+<footer>
+© 2026 St. Jerome's Arts & Science College | Symposium
+</footer>
+
+</body>
+</html>

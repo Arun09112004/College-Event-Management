@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Computer Science Events</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e293b,#2563eb);
+color:white;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+}
+
+nav{
+background:black;
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.college-name{
+color:gold;
+font-size:28px;
+font-weight:bold;
+}
+
+.hero{
+text-align:center;
+padding:60px 20px;
+}
+
+.hero h1{
+font-size:55px;
+color:gold;
+margin-bottom:15px;
+}
+
+.events{
+width:90%;
+margin:auto;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+padding-bottom:50px;
+}
+
+.card{
+width:300px;
+background:white;
+color:black;
+padding:25px;
+border-radius:20px;
+text-align:center;
+text-decoration:none;
+transition:0.4s;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.05);
+background:gold;
+}
+
+.card h2{
+color:#1e3c72;
+margin-bottom:10px;
+}
+footer{
+    background:black;
+    text-align:center;
+    padding:20px;
+    font-size:18px;
+    margin-top:auto;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<div class="college-name">
+💻 Computer Science Department
+</div>
+
+</nav>
+
+<div class="hero">
+
+<h1>Computer Science Events</h1>
+
+<p>Select an Event</p>
+
+</div>
+
+<div class="events">
+
+<a href="/paper-presentation/" class="card">
+<h2>📄 Paper Presentation</h2>
+<p>Present Your Innovative Ideas</p>
+</a>
+
+<a href="/web-designing/" class="card">
+<h2>🌐 Web Designing</h2>
+<p>Create Attractive Websites</p>
+</a>
+
+<a href="/debugging/" class="card">
+<h2>🐞 Debugging</h2>
+<p>Find and Fix Errors</p>
+</a>
+
+<a href="/coding-contest/" class="card">
+<h2>💻 Coding Contest</h2>
+<p>Programming Challenge</p>
+</a>
+
+<a href="/technical-quiz/" class="card">
+<h2>🧠 Technical Quiz</h2>
+<p>Test Your Knowledge</p>
+</a>
+
+</div>
+
+<footer>
+© 2026 Symposium | Computer Science Department
+</footer>
+
+</body>
+</html>
