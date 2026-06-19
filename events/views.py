@@ -9,12 +9,13 @@ def about(request):
     return render(request, 'about.html')
 
 def register(request):
+    event_name = request.GET.get('event', '')
 
     if request.method == "POST":
         student_name = request.POST['student_name']
         college_name = request.POST['college_name']
         department = request.POST['department']
-        event_name = request.POST['event_name']
+        event_name = request.GET.get('event', '')
         email = request.POST['email']
         phone = request.POST['phone']
 
