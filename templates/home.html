@@ -115,6 +115,57 @@
             font-size:20px;
         }
 
+        .upcoming{
+    width:90%;
+    margin:60px auto;
+    text-align:center;
+}
+
+.upcoming h2{
+    color:white;
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+.event-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.event-card{
+    background:white;
+    color:black;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+    transition:.3s;
+}
+
+.event-card:hover{
+    transform:translateY(-8px);
+}
+
+.event-card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
     </style>
 
 </head>
@@ -148,36 +199,44 @@
 
 </div>
 
-<div class="events">
+<section class="upcoming">
 
-    <a href="/sports/" style="text-decoration:none;color:inherit;">
-<div class="card">
-    <h3>🏆 Sports Day</h3>
-    <p>25 June 2026</p>
-</div>
-</a>
+<h2>🔥 Upcoming Events</h2>
 
-   <a href="/cultural/" style="text-decoration:none;color:inherit;">
-<div class="card">
-    <h3>🎭 Cultural Fest</h3>
-    <p>30 June 2026</p>
-</div>
-</a>
+<div class="event-box">
 
-<a href="/symposium/" style="text-decoration:none;color:inherit;">
-    <div class="card">
-        <h3>💻 Symposium</h3>
-        <p>05 July 2026</p>
-    </div>
-</a>
-<a href="/college-day/" style="text-decoration:none;color:inherit;">
-<div class="card">
-    <h3>🎓 College Day</h3>
-    <p>15 July 2026</p>
+<div class="event-card">
+<h3>🏆 Sports Day</h3>
+<p><b>Date:</b> 25 June 2026</p>
+<a href="/sports/" class="btn">View Details</a>
 </div>
-</a>
+
+<div class="event-card">
+<h3>🎭 Cultural Fest</h3>
+<p><b>Date:</b> 30 June 2026</p>
+<a href="/cultural/" class="btn">View Details</a>
+</div>
+
+<div class="event-card">
+<h3>💻 Symposium</h3>
+<p><b>Date:</b> 05 July 2026</p>
+<a href="/symposium/" class="btn">View Details</a>
+</div>
+
+<div class="event-card">
+<h3>🎓 College Day</h3>
+<p><b>Date:</b> 15 July 2026</p>
+<a href="/college-day/" class="btn">View Details</a>
+</div>
 
 </div>
+
+</section>
+
+
+
+ 
+
 
 <footer>
     © 2026 St. Jerome's Arts & Science College

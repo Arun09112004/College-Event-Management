@@ -1,62 +1,123 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-<title>Sports Day - College Event Management System</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sports Day 2026</title>
 
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
 
 body{
-    background:linear-gradient(135deg,#0f172a,#1e293b,#2563eb);
-    color:white;
-    min-height:100vh;
+background:linear-gradient(135deg,#0f172a,#1e293b,#2563eb);
+color:white;
+min-height:100vh;
 }
 
 nav{
-    background:black;
-    padding:20px 40px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+background:black;
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-.college-name{
-    color:gold;
-    font-size:28px;
-    font-weight:bold;
+.logo{
+font-size:30px;
+font-weight:bold;
+color:gold;
 }
 
 .menu a{
-    color:white;
-    text-decoration:none;
-    margin-left:25px;
-    font-size:18px;
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:20px;
+font-weight:bold;
 }
 
 .menu a:hover{
-    color:gold;
+color:gold;
 }
 
 .hero{
-    text-align:center;
-    padding:60px 20px;
+text-align:center;
+padding:60px 20px;
 }
 
 .hero h1{
-    font-size:60px;
-    color:gold;
-    margin-bottom:15px;
+font-size:60px;
+color:gold;
+margin-bottom:15px;
 }
 
 .hero p{
-    font-size:22px;
+font-size:24px;
+}
+
+.events{
+width:90%;
+margin:50px auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+color:black;
+border-radius:20px;
+padding:30px;
+text-align:center;
+text-decoration:none;
+transition:.4s;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:gold;
+}
+
+.card h2{
+color:#1e3c72;
+font-size:30px;
+margin-bottom:15px;
+}
+
+.card p{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#1d4ed8;
+}
+
+footer{
+background:black;
+padding:20px;
+text-align:center;
+font-size:18px;
+margin-top:50px;
 }
 
 .container{
@@ -69,45 +130,37 @@ nav{
     color:black;
     padding:30px;
     border-radius:20px;
-    margin-bottom:25px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.3);
-    transition:0.4s;
-}
-
-.card:hover{
-    transform:translateY(-10px);
+    margin-bottom:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
 }
 
 .card h2{
-    color:#2563eb;
-    margin-bottom:15px;
+    color:#1e3c72;
+    margin-bottom:20px;
 }
 
-.card li{
+.card h3{
+    color:#2563eb;
     margin-bottom:10px;
+}
+
+.card p{
+    font-size:18px;
 }
 
 .btn{
     display:inline-block;
     background:#2563eb;
     color:white;
-    padding:15px 30px;
     text-decoration:none;
+    padding:12px 25px;
     border-radius:10px;
-    margin-top:20px;
+    font-weight:bold;
 }
 
 .btn:hover{
     background:#1d4ed8;
 }
-
-footer{
-    background:black;
-    text-align:center;
-    padding:20px;
-    margin-top:30px;
-}
-
 </style>
 
 </head>
@@ -116,8 +169,8 @@ footer{
 
 <nav>
 
-<div class="college-name">
-🎓 St. Jerome's Arts & Science College
+<div class="logo">
+🏆 Sports Day 2026
 </div>
 
 <div class="menu">
@@ -129,50 +182,101 @@ footer{
 </nav>
 
 <div class="hero">
-<h1>🏆 Sports Day 2026</h1>
-<p>Annual Sports Meet of St. Jerome's Arts & Science College</p>
+
+<h1>🏅 Annual Sports Meet 2026</h1>
+
+<p>
+Choose Your Favorite Sport and Register Now
+</p>
+
+</div>
+
+<div class="events">
+    <a href="/cricket/" class="card">
+    <h2>🏏 Cricket</h2>
+    <p>Inter College Cricket Tournament</p>
+    <span class="btn">View Details</span>
+</a>
+
+<a href="/football/" class="card">
+    <h2>⚽ Football</h2>
+    <p>Knockout Football Championship</p>
+    <span class="btn">View Details</span>
+</a>
+
+<a href="/volleyball/" class="card">
+    <h2>🏐 Volleyball</h2>
+    <p>Men's & Women's Volleyball</p>
+    <span class="btn">View Details</span>
+</a>
+
+<a href="/kabaddi/" class="card">
+    <h2>🤼 Kabaddi</h2>
+    <p>Inter Department Kabaddi Match</p>
+    <span class="btn">View Details</span>
+</a>
+
+<a href="/athletics/" class="card">
+    <h2>🏃 Athletics</h2>
+    <p>Track & Field Events</p>
+    <span class="btn">View Details</span>
+</a>
+
+<a href="/chess/" class="card">
+    <h2>♟ Chess</h2>
+    <p>Individual Chess Competition</p>
+    <span class="btn">View Details</span>
+</a>
+
+<a href="/badminton/" class="card">
+    <h2>🏸 Badminton</h2>
+    <p>Singles & Doubles Tournament</p>
+    <span class="btn">View Details</span>
+</a>
+
 </div>
 
 <div class="container">
 
-<div class="card">
-<h2>📅 Event Details</h2>
+    <div class="card">
 
-<p><b>Date:</b> 25 June 2026</p>
-<p><b>Time:</b> 8:00 AM</p>
-<p><b>Venue:</b> College Sports Ground</p>
-</div>
+        <h2>🏆 Sports Championship Awards</h2>
 
-<div class="card">
-<h2>🏃 Sports Events</h2>
+        <br>
 
-<ul>
-<li>100m Running</li>
-<li>200m Running</li>
-<li>400m Running</li>
-<li>Long Jump</li>
-<li>High Jump</li>
-<li>Cricket</li>
-<li>Football</li>
-<li>Volleyball</li>
-<li>Kabaddi</li>
-</ul>
-</div>
+        <h3>🥇 Overall Champion Trophy</h3>
+        <p>
+            Awarded to the college with the highest overall points.
+        </p>
 
-<div class="card">
-<h2>📜 Rules & Regulations</h2>
+        <br>
 
-<ul>
-<li>College ID card is mandatory.</li>
-<li>Participants must report 30 minutes before the event.</li>
-<li>Fair play should be maintained.</li>
-<li>Judge's decision will be final.</li>
-<li>Registration is compulsory.</li>
-</ul>
+        <h3>🥈 Runner-Up Trophy</h3>
+        <p>
+            Awarded to the college with the second highest overall points.
+        </p>
 
-<a href="/register/" class="btn">Register Now</a>
+        <br>
 
-</div>
+        <h3>🏅 Best Athlete (Men)</h3>
+        <p>
+            Awarded to the best male athlete of the tournament.
+        </p>
+
+        <br>
+
+        <h3>🏅 Best Athlete (Women)</h3>
+        <p>
+            Awarded to the best female athlete of the tournament.
+        </p>
+
+        <br>
+
+        <a href="#" class="btn">
+            🏆 View Overall Results
+        </a>
+
+    </div>
 
 </div>
 

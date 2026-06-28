@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Cultural Fest - College Event Management System</title>
+
+<title>Cultural Fest 2026</title>
 
 <style>
 
@@ -13,7 +14,7 @@
 }
 
 body{
-    background:linear-gradient(135deg,#0f172a,#1e293b,#9333ea);
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
     color:white;
     min-height:100vh;
 }
@@ -26,9 +27,9 @@ nav{
     align-items:center;
 }
 
-.college-name{
+.logo{
     color:gold;
-    font-size:28px;
+    font-size:30px;
     font-weight:bold;
 }
 
@@ -55,12 +56,15 @@ nav{
 }
 
 .hero p{
-    font-size:22px;
+    font-size:24px;
 }
 
-.container{
+.events{
     width:90%;
-    margin:auto;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
 }
 
 .card{
@@ -68,56 +72,58 @@ nav{
     color:black;
     padding:30px;
     border-radius:20px;
-    margin-bottom:25px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.3);
-    transition:0.4s;
+    text-align:center;
+    text-decoration:none;
+    transition:.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
 }
 
 .card:hover{
     transform:translateY(-10px);
-    background:#fff7d6;
+    background:gold;
 }
 
 .card h2{
-    color:#9333ea;
+    color:#1e3c72;
     margin-bottom:15px;
 }
 
-.card li{
-    margin-bottom:10px;
+.card p{
     font-size:18px;
 }
 
 .btn{
     display:inline-block;
-    background:#9333ea;
+    margin-top:20px;
+    background:#2563eb;
     color:white;
-    padding:15px 30px;
+    padding:12px 25px;
     text-decoration:none;
     border-radius:10px;
-    margin-top:20px;
+    font-weight:bold;
 }
 
 .btn:hover{
-    background:#7e22ce;
+    background:#1d4ed8;
 }
 
 footer{
     background:black;
     text-align:center;
     padding:20px;
-    margin-top:30px;
+    margin-top:40px;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <nav>
 
-<div class="college-name">
-🎓 St. Jerome's Arts & Science College
+<div class="logo">
+🎭 Cultural Fest 2026
 </div>
 
 <div class="menu">
@@ -129,59 +135,65 @@ footer{
 </nav>
 
 <div class="hero">
-<h1>🎭 Cultural Fest 2026</h1>
-<p>Show Your Talent and Creativity</p>
-</div>
 
-<div class="container">
+<h1>🎭 Annual Cultural Fest 2026</h1>
 
-<div class="card">
-<h2>📅 Event Details</h2>
-
-<p><b>Date:</b> 30 June 2026</p>
-<p><b>Time:</b> 9:00 AM</p>
-<p><b>Venue:</b> College Auditorium</p>
+<p>
+Choose Your Favorite Cultural Event and Showcase Your Talent
+</p>
 
 </div>
 
-<div class="card">
+<div class="events">
 
-<h2>🎤 Cultural Events</h2>
+<a href="/solo_dance/" class="card">
+<h2>💃 Solo Dance</h2>
+<p>Individual Dance Competition</p>
+<span class="btn">View Details</span>
+</a>
 
-<ul>
-<li>Solo Dance</li>
-<li>Group Dance</li>
-<li>Solo Singing</li>
-<li>Group Singing</li>
-<li>Mime Show</li>
-<li>Drama</li>
-<li>Fashion Show</li>
-<li>Drawing Competition</li>
-<li>Short Film Contest</li>
-</ul>
+<a href="/group_dance/" class="card">
+<h2>👯 Group Dance</h2>
+<p>Team Dance Competition</p>
+<span class="btn">View Details</span>
+</a>
 
-</div>
+<a href="/singing/" class="card">
+<h2>🎤 Singing</h2>
+<p>Solo Singing Competition</p>
+<span class="btn">View Details</span>
+</a>
 
-<div class="card">
+<a href="/mime/" class="card">
+<h2>🎭 Mime</h2>
+<p>Silent Acting Competition</p>
+<span class="btn">View Details</span>
+</a>
 
-<h2>📜 Rules & Regulations</h2>
+<a href="/drama/" class="card">
+<h2>🎬 Drama</h2>
+<p>Stage Drama Competition</p>
+<span class="btn">View Details</span>
+</a>
 
-<ul>
-<li>College ID card is mandatory.</li>
-<li>Participants must report before the event starts.</li>
-<li>Time limit should be followed.</li>
-<li>No inappropriate performances allowed.</li>
-<li>Judge's decision is final.</li>
-</ul>
+<a href="/photography/" class="card">
+<h2>📸 Photography</h2>
+<p>Creative Photography Contest</p>
+<span class="btn">View Details</span>
+</a>
 
-<a href="/register/" class="btn">Register Now</a>
-
-</div>
+<a href="/short_film/" class="card">
+<h2>🎥 Short Film</h2>
+<p>Short Film Making Competition</p>
+<span class="btn">View Details</span>
+</a>
 
 </div>
 
 <footer>
+
 © 2026 St. Jerome's Arts & Science College | Cultural Fest
+
 </footer>
 
 </body>

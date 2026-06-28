@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Admin Dashboard</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:white;
+    min-height:100vh;
+}
+
+nav{
+    background:black;
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:gold;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:18px;
+}
+
+.menu a:hover{
+    color:gold;
+}
+
+.hero{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.hero h1{
+    color:gold;
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:22px;
+}
+
+.dashboard{
+    width:90%;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    color:black;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h2{
+    color:#1e3c72;
+    margin-bottom:15px;
+}
+
+.card h1{
+    color:#2563eb;
+    font-size:50px;
+}
+
+footer{
+    background:black;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    font-size:18px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+📊 Admin Dashboard
+</div>
+
+<div class="menu">
+<a href="/">Home</a>
+<a href="/about/">About</a>
+<a href="/register/">Register</a>
+<a href="/status/">Status</a>
+</div>
+
+</nav>
+
+<div class="hero">
+
+<h1>📊 Dashboard</h1>
+
+<p>
+College Event Management System - Admin Panel
+</p>
+
+</div>
+
+<div class="dashboard">
+    <div class="card">
+    <h2>👥 Total Registrations</h2>
+    <h1>{{ total }}</h1>
+</div>
+
+<div class="card">
+    <h2>✅ Approved Students</h2>
+    <h1>{{ approved }}</h1>
+</div>
+
+<div class="card">
+    <h2>⏳ Pending Students</h2>
+    <h1>{{ pending }}</h1>
+</div>
+
+<div class="card">
+    <h2>❌ Rejected Students</h2>
+    <h1>{{ rejected }}</h1>
+</div>
+
+<div class="card">
+    <h2>🏆 Sports Registrations</h2>
+    <h1>{{ sports }}</h1>
+</div>
+
+<div class="card">
+    <h2>💻 Symposium Registrations</h2>
+    <h1>{{ symposium }}</h1>
+</div>
+
+<div class="card">
+    <h2>🎭 Cultural Registrations</h2>
+    <h1>{{ cultural }}</h1>
+</div>
+
+<div class="card">
+    <h2>🎓 College Day Registrations</h2>
+    <h1>{{ college_day }}</h1>
+</div>
+
+</div>
+
+<footer>
+
+© 2026 St. Jerome's Arts & Science College | Admin Dashboard
+
+</footer>
+
+</body>
+</html>
