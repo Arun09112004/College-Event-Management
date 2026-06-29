@@ -172,6 +172,39 @@ College Event Management System - Admin Panel
 </div>
 
 </div>
+<h2 style="text-align:center; color:gold; margin-top:40px;">
+    📋 Recent Registrations
+</h2>
+
+<table style="width:90%; margin:20px auto; border-collapse:collapse; background:white; color:black;">
+
+<tr style="background:#2563eb; color:white;">
+    <th style="padding:12px;">Student Name</th>
+    <th style="padding:12px;">Department</th>
+    <th style="padding:12px;">Event</th>
+    <th style="padding:12px;">Status</th>
+</tr>
+
+{% for student in recent %}
+
+<tr style="text-align:center;">
+    <td style="padding:10px;">{{ student.student_name }}</td>
+    <td style="padding:10px;">{{ student.department }}</td>
+    <td style="padding:10px;">{{ student.event_name }}</td>
+    <td style="padding:10px;">{{ student.status }}</td>
+</tr>
+
+{% empty %}
+
+<tr>
+    <td colspan="4" style="padding:15px; text-align:center;">
+        No registrations found.
+    </td>
+</tr>
+
+{% endfor %}
+
+</table>
 
 <footer>
 

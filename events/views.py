@@ -158,6 +158,9 @@ def short_film(request):
 def drama(request):
     return render(request, 'drama.html')  
 
+def contact(request):
+    return render(request, 'contact.html')  
+
 from .models import Registration
 
 from .models import Registration
@@ -177,6 +180,7 @@ def dashboard(request):
 
     cultural = Registration.objects.filter(department="Cultural").count()
     college_day = Registration.objects.filter(department="College Day").count()
+    recent = Registration.objects.all().order_by('-id')[:5]
 
     context = {
         'total': total,
@@ -187,6 +191,7 @@ def dashboard(request):
         'symposium': symposium,
         'cultural': cultural,
         'college_day': college_day,
+        'recent' : recent,
     }
 
     return render(request, 'dashboard.html', context)

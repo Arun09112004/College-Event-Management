@@ -62,4 +62,5 @@ urlpatterns = [
     path('photography/', views.photography, name='photography'),
     path('short_film/', views.short_film, name='short_film'),
     path('dashboard/', views.dashboard, name='dashboard'),
+    path('contact/', views.contact, name='contact'),
     ]
